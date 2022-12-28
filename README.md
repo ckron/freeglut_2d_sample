@@ -1,12 +1,20 @@
-
-
-## exec
+### exec
 1. cd ./freeglut_2d_sample
 2. docker-compose up -d --build
 3. docker-compose exec glut2d-demo bash
 4. cd /root/workspace/src
 5. g++ -Wall -Weffc++ main.cpp -lglut -lGLU -lGL -o res.out
 6. ./res.out
+
+## dockerを使わない場合(多分これでいける※未検証)
+### install
+1. ubuntu:20.04想定
+2. apt install -y g++ freeglut3-dev
+
+### exec
+1. cd ./freeglut_2d_sample/src
+2. g++ -Wall -Weffc++ main.cpp -lglut -lGLU -lGL -o res.out
+3. ./res.out
 
 ### reference
 1. https://www.webcyou.com/?p=9639
